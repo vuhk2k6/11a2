@@ -1,8 +1,3 @@
-@media (min-width: 741px) {
-  .hide-on-pc {
-    display: none;
-  }
-}
 @media (max-width: 740px) {
   .main {
     width: 98vw;
@@ -87,6 +82,9 @@
   .student {
     height: calc(100% - 8rem);
     padding: 0 1rem;
+    & .button-menu {
+      display: block;
+    }
     &__main {
       width: 100%;
     }

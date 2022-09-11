@@ -199,6 +199,7 @@ h6 {
   top: 2rem;
   right: 2rem;
   z-index: 1000;
+  display: none;
 }
 .student__main {
   width: 98rem;
@@ -358,11 +359,6 @@ h6 {
   background-color: #7b2066;
 }
 
-@media (min-width: 741px) {
-  .hide-on-pc {
-    display: none;
-  }
-}
 @media (max-width: 740px) {
   .main {
     width: 98vw;
@@ -441,6 +437,9 @@ h6 {
   .student {
     height: calc(100% - 8rem);
     padding: 0 1rem;
+  }
+  .student .button-menu {
+    display: block;
   }
   .student__main {
     width: 100%;
