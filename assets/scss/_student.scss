@@ -3,6 +3,20 @@
   &.active {
     @include active;
   }
+  & .button-menu {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.8);
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000;
+  }
   &__main {
     width: 98rem;
     height: 100%;

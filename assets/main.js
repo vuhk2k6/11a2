@@ -418,3 +418,26 @@ student34.addEventListener("click", d34);
 student35.addEventListener("click", d35);
 student36.addEventListener("click", d36);
 student37.addEventListener("click", d37);
+
+const btnMenu = document.querySelector(".button-menu");
+const menu = document.getElementById("menu");
+const openClass = document.querySelector("open");
+const hdItems = document.querySelectorAll(".header__nav-item-link");
+const itemStudents = document.querySelectorAll(".student__category-item");
+console.log(menu);
+
+btnMenu.onclick = function () {
+  menu.classList.add("open");
+};
+
+function removeOpen() {
+  menu.classList.remove("open");
+  btnMenu.classList.remove("open");
+}
+
+for (const hdItem of hdItems) {
+  hdItem.addEventListener("click", removeOpen);
+}
+for (const itemStudent of itemStudents) {
+  itemStudent.addEventListener("click", removeOpen);
+}

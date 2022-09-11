@@ -10,11 +10,13 @@
   transition: all 1s;
   filter: blur(3rem);
   font-family: "Pacifico", cursive;
+  visibility: hidden;
 }
 @mixin active {
   bottom: 0;
   filter: blur(0);
   opacity: 1;
+  visibility: visible;
 }
 @mixin studentBtn {
   position: absolute;
